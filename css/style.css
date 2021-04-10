@@ -157,9 +157,9 @@ nav ul li{
     justify-content: space-around;
     text-align: center;
     /* padding-bottom: 5%; */
-    padding-left: 15%;
-    padding-right: 15%;
-    font-size: 1.15rem;
+    padding-left: 12%;
+    padding-right: 12%;
+    /* font-size: 1.15rem; */
 }
 .we-icons-section-1{
   /* display: flex; */
@@ -175,11 +175,19 @@ nav ul li{
     width: 50%;
     display: inline-flex;
     padding: 0px 5%;
+    margin-bottom: -5%;
 }
 .we-icons1{
   width: 65%;
   display: inline-flex;
   padding: 0px 5%;
+}
+.redes{
+  margin-left: 15%;
+}
+.redes-icons{
+  height: 8vh;
+  display: inline-flex;
 }
 .image-sf{
     width: 100%;
@@ -237,6 +245,7 @@ nav ul li{
     display: inline-block;
     width: 30%;
     vertical-align: top;
+    padding: 0;
 }
 .icon-1{
   margin: 1%;
@@ -251,10 +260,11 @@ nav ul li{
 .presupuesto{
     width: 100%;
     display: flex;
+    margin-top: 3%;
 }
 .botones{
     display: inline-block;
-    padding: 1%;
+    /* padding: 1%; */
     width: 28%;
     margin: auto;
 }
@@ -266,8 +276,11 @@ nav ul li{
   text-align: end;
 }
 #p3botones{
-    padding-top: 5%;
+    padding-top: 7%;
     font-size: 1.7rem;
+}
+#eco{
+  width: ;
 }
 /* .contacto{
   
@@ -285,6 +298,7 @@ nav ul li{
 
 .contacto{
   display: flex;
+  margin-top: -1%;
 }
 .data1{
   display: inline-block;
