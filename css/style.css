@@ -68,8 +68,9 @@ nav ul li{
     font-size: 1.5rem;
 }
 .text2-1{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
+    padding: 0px 5%;
 }
 .text2-2{
     font-size: 1.2rem;
@@ -104,21 +105,81 @@ nav ul li{
     color: white;
     width: auto;
 }
+.text44{
+  font-size: 1.6rem;
+  /* padding-top: 1%; */
+  padding-left: 15%;
+  padding-right: 20%;
+  /* padding-bottom: 1%; */
+  text-align: center;
+  color: white;
+}
+.text55{
+  font-size: 1.7rem;
+  /* padding-top: 1%; */
+  padding-left: 15%;
+  padding-right: 20%;
+  /* padding-bottom: 1%; */
+  text-align: center;
+  color: white;
+  width: auto;
+  font-weight: 600;
+}
+.text66{
+  font-size: 1.7rem;
+  /* padding-top: 1%; */
+  padding-left: 15%;
+  padding-right: 10%;
+  /* padding-bottom: 1%; */
+  text-align: center;
+  color: white;
+  width: auto;
+  font-weight: bold;
+}
+.text77{
+  font-size: 1.3rem;
+  margin-top: 1%;
+  padding-left: 4px;
+  /* padding-right: 10%; */
+  margin-bottom: 1%;
+  text-align: start;
+  color: white;
+  width: auto;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /* font-weight: bold; */
+}
 .ngr{
     color: black;
 }
 .we-icons-section{
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     text-align: center;
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
     padding-left: 15%;
     padding-right: 15%;
     font-size: 1.15rem;
 }
+.we-icons-section-1{
+  /* display: flex; */
+  justify-content: space-around;
+  text-align: center;
+  /* padding-bottom: 5%; */
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.15rem;
+  margin-bottom: 15vh;
+}
 .we-icons{
-    width: 40%;
+    width: 50%;
     display: inline-flex;
+    padding: 0px 5%;
+}
+.we-icons1{
+  width: 65%;
+  display: inline-flex;
+  padding: 0px 5%;
 }
 .image-sf{
     width: 100%;
@@ -136,6 +197,14 @@ nav ul li{
     background-image: url(../images/FONDO/FONDO_4.png); 
     text-align: center center; 
 }
+.img-footer{
+  height: 89vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url(../images/FONDO/FONDO_5.png); 
+  text-align: center center;
+}
 .titulo{
     font-size: 3rem;
     color: #ff5500;
@@ -149,6 +218,14 @@ nav ul li{
     text-align: center;
     padding-top: 5%;
 }
+.titulo2{
+  font-size: 3rem;
+  color: #ff5500;
+  text-align: start;
+  /* padding-top: 5%; */
+  padding-bottom: 5%;
+  padding-left: 15%;
+}
 .ventajas{
     /* padding-top: 10%; */
 }
@@ -157,6 +234,15 @@ nav ul li{
 }
 .icon{
     margin: 1%;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+.icon-1{
+  margin: 1%;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
 }
 #porque{
     padding-top: 5%;
@@ -169,17 +255,56 @@ nav ul li{
 .botones{
     display: inline-block;
     padding: 1%;
-    width: 33%;
+    width: 28%;
     margin: auto;
+}
+.boton-enviar{
+  display: block;
+  /* padding: 1%; */
+  width: 27%;
+  /* margin: auto; */
+  text-align: end;
 }
 #p3botones{
     padding-top: 5%;
     font-size: 1.7rem;
 }
+/* .contacto{
+  
+}
+.redes{
+  
+}
+.formulario{
+  
+}
+.father{
+  display: inline-block;
+  float: left;
+} */
 
-
-
-
+.contacto{
+  display: flex;
+}
+.data1{
+  display: inline-block;
+  /* background-color: red; */
+  width: 47%;
+  margin-top: 4%;
+}
+.data2{
+  display: inline-block;
+  /* background-color: pink; */
+  width: 47%;
+  margin-top: 10%;
+}
+.Entrada{
+  width: 90%;
+  border-radius: 10px;
+}
+.izq{
+  text-align: start !important;
+}
 /* .elegirnos{
     display: flex;
     float: left;
