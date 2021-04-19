@@ -2,14 +2,194 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif !important;
 }
 html{
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
     /* margin: 0 auto; */
     font-size: 100%;
     scroll-behavior: smooth;
 }
+
+/* Administración */
+.logIn{
+  display: inline-block;
+  padding: 15px 2%;
+  text-align: center;
+  width: 60%;  
+  margin-top: 60vh;
+  position: relative;
+  z-index: 30;
+}
+.ppIngresar{
+  text-align: center;
+  font-size: 1.4em;
+  margin: 0px;
+  color: white;
+}
+
+.entradaLogin{
+  display: inline-block;
+  color: rgb(91,91,91);
+  font-size: 1.2em;
+  text-align: left;
+  background: rgb(245,245,245);
+  vertical-align: middle;
+  border: none;
+  width: 40%;
+  padding: 5px 1%;
+  margin: 10px 1%;
+  border-radius: 10px;
+}
+
+.mensaje {
+  position: fixed;
+  z-index: 30;
+  top: 50vh;
+  left: 20%;
+  background: #173349;
+  padding: 60px 5%;
+  width: 60%;
+  text-align: center;
+  display: none;
+  border-radius: 10px;
+  }
+  .ppmensaje{
+  font-size: 1.6em;
+  margin-left: 2.5%;
+  display: block;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  }
+  .okmensaje {
+  width: 10%;
+  display: block;
+  margin: 30px 45% 10px 45%;
+  padding: 1.5%;
+  font-size: 1.4em;
+  color: black;
+  border: none;
+  background: white;
+  font-weight: normal;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* fin Administracion */
+
+/* Plataforma autogestion */
+
+.Usuario{
+  font-size: 2.5em;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  left: 85%;
+  margin: 40px 5%;
+  cursor: pointer;
+}
+.ppInput{ 
+  font-size: 1.7rem;
+  margin: 30px 5%;
+  text-align: left;
+  color: #172b52;
+  display: inline-block;
+ }
+ .ppInput1{ 
+  font-size: 1.4em;
+  margin: 5px;
+  width: 30%;
+  text-align: left;
+  color: #172b52;
+  display: inline-block;
+}
+.separador{
+  width: 80%;
+  height: 2px;
+  margin:30px 5%;
+  background: #ff5500;
+}
+
+ .inputPlataforma{
+  display: inline-block;
+  border: solid 2px #ff5500;
+  padding: 10px;
+  width: 180px;
+  border-radius: 10px;
+ }
+ .inputPlataforma1{
+  display: inline-block;
+  border: solid 2px #172b52;
+  padding: 10px;
+  width: 30%;
+  margin: 0px 1%;
+  border-radius: 10px;
+ }
+
+ .formulario{
+  margin-left:5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.divImagenes{
+  margin-bottom: 100px;
+}
+.divImgMini{
+  display: block;
+  width: 90%;
+  margin: 10px 5%; 
+}
+.imgMini{
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.IconoTrashIMG{
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 2em;
+  display: inline-block;
+  margin-left: 30px;
+  cursor: pointer;
+  color:#173349;
+}
+.IconoUpload{
+  margin-left: -15%; 
+  vertical-align: bottom;
+  color:white;
+  font-size: 3em;
+  cursor: pointer;
+  position: absolute;
+}
+
+.toast{
+  animation: toast 2s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes toast {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes toast {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.toastReverse{
+  animation: toastReverse 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes toastReverse {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes toastReverse {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+/* fin Plataforma*/
+
 nav{
     float: left;
     width: 100%;
@@ -18,29 +198,42 @@ nav ul{
     text-align: center;
     display: flex;
     justify-content: space-around;
-    padding: 80px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 60px 4%;
+    font-size: 1.5rem;
+    transition: 2s;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 nav ul li{
     list-style: none;
     display: inline-block;
+    cursor: pointer;
 }
+
+.ul_condensed{
+  position: fixed;
+  width: 100%;
+  padding: 10px 3%;
+  background: #173349;
+  z-index: 100;
+  font-size: 0.8em;
+  padding: 10px 5%;
+}
+
 .itemNav{
     color: white;
     text-decoration: none;
-    font-size: 1.7rem;
     list-style: none;
     font-weight: bold;
 }
 .mainimage{
     width: 100%;
-    height: 88vh;
+    height: 110vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
-    background-image: url(../images/FONDO/FONDO\ HOME_1.png); 
-    text-align: center center;
+    background-image: url(../images/fondoppal.png); 
 }
 .mainlogo{
     width: 100%;
@@ -59,6 +252,7 @@ nav ul li{
     padding-right: 20%;
     padding-bottom: 5%;
     text-align: center;
+    color: #172b52;
 }
 .text2{
     font-size: 1.5rem;
@@ -68,11 +262,13 @@ nav ul li{
     font-size: 1.5rem;
 }
 .text2-1{
+    color:#172b52;
     font-size: 1.4rem;
     text-align: center;
     padding: 0px 5%;
 }
 .text2-2{
+    color:#172b52;
     font-size: 1.2rem;
     text-align: center;
 }
@@ -85,6 +281,7 @@ nav ul li{
     text-align: center;
     color: #ff5500;
     font-weight: bold;
+    line-height: 1.3em;
 }
 .text4{
     font-size: 1.6rem;
@@ -94,6 +291,7 @@ nav ul li{
     padding-bottom: 1%;
     text-align: center;
     color: white;
+    line-height: 1.3em;
 }
 .text5{
     font-size: 1.7rem;
@@ -138,19 +336,45 @@ nav ul li{
 }
 .text77{
   font-size: 1.3rem;
-  margin-top: 1%;
+  margin-top: 5px;
   padding-left: 4px;
-  /* padding-right: 10%; */
-  margin-bottom: 1%;
+  margin-bottom: 5px;
   text-align: start;
-  color: white;
-  width: auto;
   padding-top: 3px;
   padding-bottom: 3px;
-  /* font-weight: bold; */
+}
+
+.label77{
+  width: 45%;
+  font-size: 1.3rem;
+  margin-top: 5px;
+  padding-left: 4px;
+  margin-bottom: 5px;
+  text-align: start;
+  padding-top: 3px;
+  color: white;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+.cerrar{
+  position: absolute;
+  top: 8vh;
+  right: 12%;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white !important;
+}
+input , select {
+  outline: none!important;
+}
+
+textarea{
+  font-family: 'Open Sans', sans-serif !important;
 }
 .ngr{
-    color: black;
+    color:#172b52;
 }
 .we-icons-section{
     /* display: flex; */
@@ -184,6 +408,7 @@ nav ul li{
 }
 .redes{
   margin-left: 15%;
+  text-align: left;
 }
 .redes-icons{
   height: 8vh;
@@ -191,27 +416,27 @@ nav ul li{
 }
 .image-sf{
     width: 100%;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position:center;
-    background-image: url(../images/FONDO/FONDO_2_ORANGE.png); 
-    text-align: center center; 
+    background-position:0% 0%;
+    background-image: url(../images/FONDO_2_ORANGE.png); 
+    text-align: center; 
 }
 .image-pq{
-    height: 89vh;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position:center;
-    background-image: url(../images/FONDO/FONDO_4.png); 
-    text-align: center center; 
+    background-image: url(../images/FONDO_4.png); 
+    text-align: center; 
+    padding-bottom: 30px;
 }
 .img-footer{
-  height: 89vh;
+  padding-bottom: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url(../images/FONDO/FONDO_5.png); 
-  text-align: center center;
+  background-image: url(../images/FONDO_5.png); 
+  text-align: center;
 }
 .titulo{
     font-size: 3rem;
@@ -234,6 +459,44 @@ nav ul li{
   padding-bottom: 5%;
   padding-left: 15%;
 }
+.custom_button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  margin: 20px 8%;
+  background: #173349;
+  padding: 10px 1%;
+  border-radius: 20px;
+  border: solid white;
+  color: white;
+  cursor: pointer;
+}
+.custom_button:hover{
+  color: #ff5500;
+}
+
+.custom_button_p{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.bot-env{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 5%;
+  background: #ff5500;
+  padding: 10px 8%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: solid 2px transparent;
+}
+.bot-env:hover{
+  border: solid 2px white;
+}
+.bot-env-p{
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+}
 .ventajas{
     /* padding-top: 10%; */
 }
@@ -253,14 +516,14 @@ nav ul li{
   width: 30%;
   vertical-align: top;
 }
-#porque{
+.porque{
     padding-top: 5%;
     padding-bottom: 2%;
 }
 .presupuesto{
     width: 100%;
-    display: flex;
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 .botones{
     display: inline-block;
@@ -275,13 +538,109 @@ nav ul li{
   /* margin: auto; */
   text-align: end;
 }
-#p3botones{
+.p3botones{
     padding-top: 7%;
     font-size: 1.7rem;
 }
-#eco{
+.eco{
   width: ;
 }
+
+.underline{
+  position: absolute;
+  display: none; 
+  transition: 0.5s; 
+  width: 50px; 
+  height: 3px;  
+  z-index: 400;
+  background: white;
+  border-radius: 20px;
+  position: fixed;
+  top: 90px;
+} 
+
+/* popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 2s;
+  opacity: 0;
+  z-index: 3000;
+  height: 100vh;
+  overflow: auto;
+  padding: 2vh 10%;
+}
+.popup_content{
+  padding: 2vh 10%;
+  background: #173349;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* preguntas frecuentes */
+
+.preguntas-frecuentes{
+    display: block;
+    justify-content: space-around;
+}
+.izq{
+    width: 45%;
+    margin-left: 3%;
+    display: inline-block;
+}
+.der{
+    width: 45%;
+    display: inline-block;
+    margin-left: 3%;
+}
+.bloque-faq{
+    background-color:#173349;
+    color: white;
+    /* font-size: 1.5rem; */
+    /* text-align: start; */
+    padding: 1% 4%;
+    border-radius: 20px;
+    /* font-weight: bolder; */
+    /* width: 45%; */
+    display: block;
+    margin-bottom: 30px;
+
+}
+.recortada{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 94%;
+  display: inline-block;
+}
+.pregunta{
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+.pregunta:hover{
+    color: #ff5500;
+}
+.iconoFlecha{
+  font-size: 1.5em;
+}
+.respuesta p{
+  font-size: 1.3rem;
+  text-align: left;
+  transition: 2s;
+  transition-timing-function: ease-in-out;
+  max-height: 0px;
+  overflow-y: hidden;
+}
+
+
 /* .contacto{
   
 }
@@ -315,8 +674,10 @@ nav ul li{
 .Entrada{
   width: 90%;
   border-radius: 10px;
+  border: none;
+  background: white;
 }
-.izq{
+.izq1{
   text-align: start !important;
 }
 /* .elegirnos{
@@ -339,7 +700,6 @@ img {
 
 body {
   margin: 0;
-  font-family: sans-serif;
 }
 
 .carousel {
@@ -359,10 +719,12 @@ body {
   height: 90vh; /* Set your height */
 }
 
-.carousel-item>.carousel-img {
-  width: 100%;
-  min-height: 90vh; /* same height */
-  height: 90vh;
+.carousel-img {
+  position: absolute;
+   z-index: 40;
+   background: rgba(0,0,0,0.5);
+   margin-top: -20vh;
+   padding: 20px 3%;
 }
 .carousel-item.carousel-video {
   display: block;
@@ -379,6 +741,21 @@ body {
   transform: translateX(-50%) translateY(-50%);
   /* uncomment the following line if you want to prevent mouse (or touch) clicks */
   pointer-events: none;
+}
+.carousel-image{
+  width: 100%;
+  height: 90vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pp_carousel1{
+  color: white;
+  font-size: 1.5em;
+}
+.pp_carousel2{
+  color: white;
+  font-size: 1.3em; 
 }
 .carousel-inner>.active,
 .carousel-inner>.next {
