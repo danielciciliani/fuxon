@@ -155,7 +155,7 @@ html{
 .IconoUpload{
   margin-left: -15%; 
   vertical-align: bottom;
-  color: #ff5500;
+  color:white;
   font-size: 3em;
   cursor: pointer;
   position: absolute;
@@ -378,6 +378,13 @@ textarea{
 }
 .sol-pres{
   margin-top: 4%;
+}
+.text-obli{
+  color: white;
+}
+.plano:hover{
+  color: #676d75;
+  transition: 0.3s;
 }
 .we-icons-section{
     /* display: flex; */
@@ -897,88 +904,4 @@ body {
   to {
     left: 0;
   }
-}
-/* cambios para presupuesto */
-
-.cabecera-pres{
-  width: 100%;
-  /* display: inline-block; */
-  display: flex;
-  height: 17vh;
-}
-.titulo7{
-  font-size: 3rem;
-  color:white;
-  text-align: start;
-  padding-top: 3%;
-  /* padding-bottom: 5%; */
-  font-weight: 900;
-  /* padding-top: 1%; */
-  padding-left: 3%;
-  display: inline-block;
-  width: 47%;
-}
-.item-logo1{
-  display: inline-block;
-  text-align: end;
-}
-.mainlogo1{
-  /* width: 47%; */
-  height: 30vh;
-  background-image: url(../images/logo1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* background-position: 50% 50%;  */
-  /* position: absolute; */
-  margin-top: 3vh;
-  display: inline-block;
-  text-align: end;
-}
-.fondo-presupuesto{
-  background-image: url(../images/fondo-presupuesto1.png);
-  background-repeat: repeat-y;
-  background-size: contain;
-  background-position: center;
-  height: 150vh;   
-}
-.item-presupuesto{
-  display: inline-block;
-}
-.text77{
-  font-size: 1.3rem;
-  margin-top: 5px;
-  padding-left: 4px;
-  margin-bottom: 5px;
-  text-align: start;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-.text88{
-  font-size: 1.4rem;
-  /* margin-top: 5px; */
-  /* padding: 4px; */
-  /* margin-bottom: 5px; */
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-weight: 700;
-  padding-right: 25px;
-}
-.text99{
-font-size: 1.7rem;
-margin-top: 5px;
-padding-left: 4px;
-margin-bottom: 5px;
-text-align: center;
-padding-top: 3px;
-padding-bottom: 3px;
-font-weight: 700;
-color: #ff5500;
-}  
-
-.no-incluye{
-    margin-top: 120px;
-    color: #676d75;
-}
-.final{
-    background: #ff5500;
 }

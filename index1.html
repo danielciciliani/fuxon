@@ -223,11 +223,11 @@
         </div>
         <div class="faq2 bloque-faq">
             <div class="pregunta" id="pregunta11" onclick="AbrirPregunta(event)">
-                <p class="recortada" id="textopre11">FALTA PREGUNTA</p>
+                <p class="recortada" id="textopre11">¿Como se ejecuta el proceso de construcción de una vivienda en Steel Framing?</p>
                 <i class="fas fa-chevron-down iconoFlecha" id="flechaaa11"></i>
             </div>
             <div class="respuesta">
-                <p id="respuesta11">Falta respuesta</p>
+                <p id="respuesta11">1.- Etapa de proyecto y aprobación municipal.  2.- Fundación.  3.- Estructura y revestimiento de exteriores.  4.- Instalaciones.  5.- Revestimientos interiores.  6.- Terminación.</p>
             </div>
         </div>   
     </div>
@@ -324,19 +324,19 @@
     <div id="popupPresupuesto" class="overlay">
         <div id="popupBody" class="popup_content">
             <a class="cerrar" onclick="CerrarPresupuesto()" style="cursor: pointer;">&times;</a>
-            <h2 class="titulo2" style="padding: 0px; text-align: center;">Solicitá tu presupuesto</h2>
+            <h2 class="titulo2 sol-pres" style="padding: 0px; text-align: center;">Solicitá tu presupuesto</h2>
             <div class="popupContent">
                 <p class="label77" style="text-align: center; width: 100%; margin: -30px 0px 20px 0px">Completá el formulario y recibí el presupuesto online</p>
-                <div class="section-work">
+                <div class="section-work sol-pres">
                     <div class="section-brand-pop connosotros" style="height: auto; ">
-                        <p class="label77">Nombre y Apellido</p>
+                        <p class="label77">Nombre y Apellido *</p>
                         <input type="text" class="Entrada text77"  id="nombre_presupuesto" style="width: 45%">
-                        <p class="label77">e-mail</p>
+                        <p class="label77">E-mail *</p>
                         <input type="mail" class="Entrada text77"  id="mail_presupuesto" style="width: 45%">
-                        <p class="label77">Teléfono</p>
+                        <p class="label77">Teléfono *</p>
                         <input type="text" class="Entrada text77"  id="telefono_presupuesto" onkeypress="Teclado()" style="width: 45%">
                         <br>
-                        <p class="label77">Relación con la Obra</p>
+                        <p class="label77">Relación con la Obra *</p>
                         <select class="Entrada text77" id="relacion_obra" style="width: 45%">
                             <option></option>
                             <option>Propietario/Inversionista</option>
@@ -345,7 +345,7 @@
                             <option>Empresa Constructora/Constructor</option>
                             <option>Otro</option>
                         </select>
-                        <p class="label77">Tipo de Contrucción</p>
+                        <p class="label77">Tipo de Contrucción *</p>
                         <select class="Entrada text77" id="tipo_obra" style="width: 45%">
                             <option></option>
                             <option>Casa Unifamiliar</option>
@@ -355,29 +355,32 @@
                             <option>Depósito/Galpón</option>
                             <option>Otro</option>
                         </select>
-                        <p class="label77">Provincia</p>
+                        <p class="label77">Provincia *</p>
                         <select class="Entrada text77" id="provincia" style="width: 45%" onchange="Provincia()">
                             <option></option>
                         </select>
-                        <p class="label77">Localidad</p>
+                        <p class="label77">Localidad *</p>
                         <input type="text" class="Entrada text77" id="localidad" style="width: 45%" onkeyup="Localidad()" onclick="Provincia('1-1-5entrada')" autocomplete="nope">
                         <div id="divLocalidad" style="display: none; position: absolute; z-index: 2; width: 29%;margin-left: 32%">
                             <div id="divLocalidad1"></div>
                         </div>
                         <p class="label77">Dirección de la Obra</p>
                         <input type="text" class="Entrada text77"  id="direccion_presupuesto"  style="width: 45%">
-                        <p class="label77" style="width: 45%">m2 a construir</p>
+                        <p class="label77" style="width: 45%">m2 a construir *</p>
                         <input type="text" class="Entrada text77"  id="m2_presupuesto" onkeypress="Teclado()" style="width: 10%; margin-right: 35%">
                         <div style="text-align: left;margin-left: 5%">
-                            <p class="label77" style="width: 30%">Adjuntar Plano</p>
-                            <input  type="file" id="fichero" name="Archivo" onchange="Upload()" style="width: 15%; vertical-align: middle; opacity: 0; position: relative;z-index: 10; height: 30px; cursor: pointer;" />
-                            <i class="fas fa-file-upload IconoUpload" ></i>
+                            <p class="label77" style="width: 30%">Adjuntar Plano  -opcional-</p>
+                            <input  type="file" id="fichero" name="Archivo" onchange="Upload()" style="width: 25%; vertical-align: middle; opacity: 0; position: relative;z-index: 10; height: 20px; cursor: pointer;" />
+                            <i class="fas fa-file-upload IconoUpload plano" ></i>
                         </div>
                         
                         <div style="text-align: right;">
                             <div class="bot-env">
                                 <p class="bot-env-p">Obtener Presupuesto</p>
                             </div>
+                        </div>
+                        <div class="text-obli" style="text-align: left;">
+                            <p>(*)Datos obligatorios</p>
                         </div>    
                     </div>
                 </div>
@@ -395,7 +398,7 @@
                     <div class="section-brand-pop connosotros" style="height: auto; ">
                         <p class="label77">Nombre y Apellido</p>
                         <input type="text" class="Entrada text77"  id="nombre_reunión" style="width: 45%">
-                        <p class="label77">e-mail</p>
+                        <p class="label77">E-mail</p>
                         <input type="mail" class="Entrada text77"  id="mail_reunion" style="width: 45%">
                         <p class="label77">Teléfono</p>
                         <input type="text" class="Entrada text77"  id="telefono_reunion" onkeypress="Teclado()" style="width: 45%">

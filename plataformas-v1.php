@@ -25,20 +25,13 @@ if( !isset($_SESSION["IDSesion"]) ){
    		<i class="fas fa-power-off"></i>
 	</span>
 </div>
-	<p class="ppInput">Precio por m2</p>
-	<form method="post" action="presupuesto.php">
-		<input type="number" name="costom2" class="inputPlataforma" id="costo" >
-		<div class="bot-env" onclick="CambiarCosto()" style="width: 180px; padding: 10px 0px; text-align:center;">
-			<p class="bot-env-p">Guardar Precio</p>
-		</div>
-	</form>
 
-	<!-- <p class="ppInput">Precio por m2</p>
-		<input type="number" name="costom2" class="inputPlataforma" id="costo" >
-		<div class="bot-env" onclick="CambiarCosto()" style="width: 180px; padding: 10px 0px; text-align:center;">
+	<p class="ppInput">Precio por m2</p>
+	<input type="number" class="inputPlataforma" id="costo" >
+	<div class="bot-env" onclick="CambiarCosto()" style="width: 180px; padding: 10px 0px; text-align:center;">
         <p class="bot-env-p">Guardar Precio</p>
-    </div> -->
-	<br>
+    </div>
+    <br>
     <div class="separador"></div>
     <p class="ppInput">Próximas reuniones informativas</p>
     <input type="datetime-local" class="inputPlataforma" onchange="GuardarFecha()" id="nueva_fecha" style="width: 250px;cursor: pointer;">
