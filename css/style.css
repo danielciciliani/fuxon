@@ -412,10 +412,16 @@ textarea{
 .redes{
   margin-left: 15%;
   text-align: left;
+  margin-top: 1%;
 }
 .redes-icons{
-  height: 8vh;
+  height: 7vh;
   display: inline-flex;
+  margin: 10px;
+}
+.redes-icons:hover{
+  color: #ff5500;
+  height: 8vh;
 }
 .image-sf{
     width: 100%;
@@ -982,3 +988,13 @@ color: #ff5500;
 .final{
     background: #ff5500;
 }
+.aparecer {
+  -webkit-animation-name: zoomin;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: zoomin;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  }
