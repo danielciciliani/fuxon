@@ -8,6 +8,13 @@ html{
     /* margin: 0 auto; */
     font-size: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Administración */
@@ -377,7 +384,7 @@ textarea{
     color:#172b52;
 }
 .sol-pres{
-  margin-top: 4%;
+  margin-top: 60px;
 }
 .we-icons-section{
     /* display: flex; */
@@ -410,18 +417,19 @@ textarea{
   padding: 0px 5%;
 }
 .redes{
-  margin-left: 15%;
+  margin-left: 7%;
   text-align: left;
   margin-top: 1%;
 }
 .redes-icons{
   height: 7vh;
   display: inline-flex;
-  margin: 10px;
+  margin: 0.5vh 10px;
 }
 .redes-icons:hover{
-  color: #ff5500;
   height: 8vh;
+  margin: 0vh 10px;
+  cursor: pointer;
 }
 .image-sf{
     width: 100%;
@@ -467,6 +475,7 @@ textarea{
   /* padding-top: 5%; */
   padding-bottom: 5%;
   padding-left: 15%;
+  line-height: 1em;
 }
 .custom_button {
   display: inline-block;
@@ -479,6 +488,10 @@ textarea{
   border: solid white;
   color: white;
   cursor: pointer;
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  left: 0%;
 }
 .custom_button:hover{
   color: #ff5500;
@@ -550,6 +563,8 @@ textarea{
 .p3botones{
     padding-top: 7%;
     font-size: 1.7rem;
+    opacity: 0;
+    transition: 3s;
 }
 .eco{
   width: ;
@@ -601,11 +616,13 @@ textarea{
     width: 45%;
     margin-left: 3%;
     display: inline-block;
+    vertical-align: top;
 }
 .der{
     width: 45%;
     display: inline-block;
     margin-left: 3%;
+    vertical-align: top;
 }
 .bloque-faq{
     background-color:#173349;
@@ -624,6 +641,13 @@ textarea{
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 94%;
+  display: inline-block;
+}
+.no_recortada{
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
   width: 94%;
   display: inline-block;
 }
@@ -649,7 +673,13 @@ textarea{
   overflow-y: hidden;
 }
 
+.entrada_derecha{
+  left: 150%;
+}
 
+.entrada_izquierda{
+  left: -150%;
+}
 /* .contacto{
   
 }
@@ -689,6 +719,10 @@ textarea{
 .izq1{
   text-align: start !important;
 }
+.izq2{
+  padding-left: 7%;
+  text-align: left;
+}
 /* .elegirnos{
     display: flex;
     float: left;
@@ -707,9 +741,6 @@ img {
   vertical-align: middle;
 }
 
-body {
-  margin: 0;
-}
 
 .carousel {
   position: relative;
@@ -998,3 +1029,113 @@ color: #ff5500;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   }
+.marginredes{
+  margin-top: -60px;
+}
+@media all and (max-width: 1024px){ 
+  .mainlogo{
+    width: 90%;
+    margin: 40vh 5%;
+  }
+  nav ul li{
+    padding: 10px 2%;
+  }
+  nav ul{
+    display: block;
+    padding: 10px 2%;
+  }
+  .marginredes{
+    margin-top: -10px;
+  }
+  .underline{
+    visibility: hidden;
+  }
+  .text1{
+    padding: 50px 8%;
+  }
+  .icon-1 , .icon{
+    width: 100%;
+    margin: 30px 1%;
+  }
+  .text4, .text3{
+    padding: 30px 10%;
+  }
+  .text5{
+    padding: 10px 10%;
+  }
+  .nosotros{
+    margin: 50px 0px;
+  }
+  .izq , .der{
+    width: 90%;
+  }
+  .recortada , .no_recortada{
+    width: 90%;
+  }
+
+  .custom_button{
+    width: 84%;
+  }
+  .contacto {
+    display: block;
+  }
+  .titulo2{
+    text-align: center;
+    padding: 10px;
+  }
+  .izq1{
+    text-align: center !important;
+  }
+  .izq2 {
+    padding: 0px;
+    text-align: center;
+  }
+  .text44{
+    padding: 0px 5%;
+  }
+  .data2 , .data1{
+    width: 90%;
+  }
+  .redes{
+    margin: 20px;
+    text-align: center;
+  }
+  .image-sf {
+    background: #ff5500;
+  }
+  .orange{
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+    background: #ff5500;
+  }
+  .image-pq{
+    background:white;
+  }
+  .overlay{
+    padding: 10px 1%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .popup_content{
+    padding: 1vh 2%;
+  }
+  .labelpopup{
+    margin-top: 10px!important
+  }
+  .Entrada{
+    width: 90%!important;
+  }
+  .label77{
+    width: 90%!important;
+  }
+  .bot-env{
+    display: block;
+    margin: 60px 0px 10px 0px;
+    text-align: center;
+  }
+  .cerrar{
+    top: 4vh;
+    right: 8%;
+    font-size: 40px;
+  }
+}

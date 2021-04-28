@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?v=0.0.1">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
@@ -259,16 +259,18 @@
                 <p class="text5 ngr">Contamos con equipos de trabajo altamente calificados para desarrollar cada uno de nuestros proyectos.</p>                
                 <p class="text5 ngr">Porque día a día buscamos estratégicamente eficientizar los tiempos de obra cumpliendo con todos los requisitos y responsabilidades de ingeniería que requiere una obra.</p>
                 <p class="text5 ngr">Con seriedad, compromiso y profesionalismo nos encontramos sumamente dispuestos a ser parte de tu proyecto.</p>
-                <p class="text5 p3botones" style="font-weight: 600;">Para solicitar un presupuesto o recibir mayor información <br> podes coordinar una reunión con nosotros de manera gratuita</p>    
+                <div class="orange">
+                <p class="text5 p3botones" id="tipeado" style="font-weight: 600; min-height: 220px">Para solicitar un presupuesto o recibir mayor información podes coordinar una reunión con nosotros de manera gratuita</p>    
                 <div class="presupuesto">
-                    <div class="custom_button aparecer" onclick="abrirPresupuesto()">
+                    <div class="custom_button entrada_izquierda" id="boton1" onclick="abrirPresupuesto()">
                         <p class="custom_button_p">PEDÍ TU</p>
                         <P class="custom_button_p">PRESUPUESTO AHORA</P>
                     </div>
-                    <div class="custom_button" onclick="abrirReuniones()">
+                    <div class="custom_button entrada_derecha" id="boton2" onclick="abrirReuniones()">
                         <p class="custom_button_p">INSCRIBITE A LA PRÓX.</p>
                         <P class="custom_button_p">REUNIÓN INFORMATIVA</P>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -293,17 +295,6 @@
             <p class="text44 izq1">presupuestos@fuxon.com.ar</p> 
             <br>
             <br>
-            <p class="text55 izq1">¡Seguinos!</p>
-            <div class="redes">
-                <img class="redes-icons" src="./images/REDES SOCIALES_FACEBOOK1.svg" alt="icono facebook">
-                <img class="redes-icons" src="./images/REDES SOCIALES_LINKEDIN1.svg" alt="icono linkedin">
-                <img class="redes-icons" src="./images/REDES SOCIALES_INSTAGRAM1.svg" alt="icono instagram">
-            </div>
-            <!-- <div class="redes">
-                <img class="redes-icons" src="./images/REDES SOCIALES_FACEBOOK.png" alt="icono facebook">
-                <img class="redes-icons" src="./images/REDES SOCIALES_LINKEDIN.png" alt="icono linkedin">
-                <img class="redes-icons" src="./images/REDES SOCIALES_INSTAGRAM.png" alt="icono instagram">
-            </div> -->
         </div>
         <div class="data2" style="">
             <input type="text" class="Entrada text77"  id="entrada1" placeholder=" Nombre:">
@@ -324,15 +315,26 @@
                     <p class="bot-env-p">Enviar</p>
                 </div>
             </div>            
-        </div>                    
+        </div> 
     </footer>
+        <div class="img-footer marginredes" >
+            <p class="text55 izq2">¡Seguinos!</p>
+            <div class="redes">
+                <img class="redes-icons" src="./images/REDES SOCIALES_FACEBOOK1.svg" alt="icono facebook">
+                <img class="redes-icons" src="./images/REDES SOCIALES_LINKEDIN1.svg" alt="icono linkedin">
+                <a target="_blank" href="https://www.instagram.com/fuxon.steelframe/">
+                    <img class="redes-icons" src="./images/REDES SOCIALES_INSTAGRAM1.svg" alt="icono instagram">
+                </a>
+            </div>
+        </div>                   
+
 
     <div id="popupPresupuesto" class="overlay">
         <div id="popupBody" class="popup_content">
             <a class="cerrar" onclick="CerrarPresupuesto()" style="cursor: pointer;">&times;</a>
             <h2 class="titulo2 sol-pres" style="padding: 0px; text-align: center;">Solicitá tu presupuesto</h2>
             <div class="popupContent">
-                <p class="label77" style="text-align: center; width: 100%; margin: -30px 0px 20px 0px">Completá el formulario y recibí el presupuesto online</p>
+                <p class="label77 labelpopup" style="text-align: center; width: 100%; margin: -30px 0px 20px 0px">Completá el formulario y recibí el presupuesto online</p>
                 <div class="section-work sol-pres">
                     <div class="section-brand-pop connosotros" style="height: auto; ">
                         <p class="label77">Nombre y Apellido *</p>
@@ -397,7 +399,7 @@
     <div id="popupReunion" class="overlay">
         <div id="popupBody" class="popup_content">
             <a class="cerrar" onclick="CerrarReunion()" style="cursor: pointer;">&times;</a>
-            <h2 class="titulo2" style="padding: 0px; text-align: center;">Inscribite a la siguiente</h2>
+            <h2 class="titulo2 sol-pres" style="padding: 0px; text-align: center;">Inscribite a la siguiente</h2>
              <h2 class="titulo2" style="padding: 0px; text-align: center;">reunión informativa</h2>
             <div class="popupContent" style="margin-top: 10vh">
                 <div class="section-work">
@@ -524,6 +526,7 @@ document.getElementById('carouselNext').addEventListener('click', function(e) {
 window.scrollTo(0,0);
 window.addEventListener('scroll', Scroll);
 var condensed=false;
+var lanza_animacion=0;
 
 function Scroll(){
    const currentScroll = window.scrollY; 
@@ -541,6 +544,12 @@ function Scroll(){
         document.getElementById("underline").style.top="90px";
         condensed=false;
     } 
+    var posAnimacion=document.getElementById('tipeado').offsetTop-250;
+    if (currentScroll > posAnimacion && lanza_animacion==0){
+        console.log("lanza animacion")
+        tipear();
+        lanza_animacion=1;
+    }
 }
 
 //menu
@@ -578,10 +587,14 @@ function AbrirPregunta(event){
         document.getElementById('respuesta'+idpregunta).style.maxHeight='150px';
         document.getElementById('flechaaa'+idpregunta).classList.remove('fa-chevron-down');
         document.getElementById('flechaaa'+idpregunta).classList.add('fa-chevron-right');
+        document.getElementById('textopre'+idpregunta).classList.add('no_recortada');
+        document.getElementById('textopre'+idpregunta).classList.remove('recortada');
     }else{
         document.getElementById('respuesta'+idpregunta).style.maxHeight='0px';
         document.getElementById('flechaaa'+idpregunta).classList.remove('fa-chevron-right');
         document.getElementById('flechaaa'+idpregunta).classList.add('fa-chevron-down');
+        document.getElementById('textopre'+idpregunta).classList.remove('no_recortada');
+        document.getElementById('textopre'+idpregunta).classList.add('recortada');
     }
 }
 
@@ -718,6 +731,16 @@ function clearDiv(){
     zona.style.maxHeight="200px";
     zona.style.overflowY="auto";
     document.getElementById("divLocalidad").appendChild(zona);
+}
+
+function tipear(){
+        setTimeout(function(){
+            document.getElementById('tipeado').style.opacity=1;
+        },30)
+        setTimeout(function(){
+            document.getElementById('boton1').classList.remove("entrada_izquierda");
+            document.getElementById('boton2').classList.remove("entrada_derecha");
+        },200)
 }
 
 </script>
