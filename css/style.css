@@ -1051,17 +1051,19 @@ color: #ff5500;
     visibility: hidden;
   }
   .text1{
-    padding: 50px 8%;
+    padding: 50px 10%;
   }
   .icon-1 , .icon{
     width: 100%;
     margin: 30px 1%;
   }
-  .text4, .text3{
+  .text3{
     padding: 30px 10%;
+    font-size: 1.4rem;
   }
   .text5{
     padding: 10px 10%;
+    font-size: 1.4rem;
   }
   .nosotros{
     margin: 50px 0px;
@@ -1082,6 +1084,9 @@ color: #ff5500;
   .titulo2{
     text-align: center;
     padding: 10px;
+    font-size: 2.7rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .izq1{
     text-align: center !important;
@@ -1091,7 +1096,7 @@ color: #ff5500;
     text-align: center;
   }
   .text44{
-    padding: 0px 5%;
+    padding: 0px 0%;
   }
   .data2 , .data1{
     width: 90%;
@@ -1107,6 +1112,7 @@ color: #ff5500;
     padding-bottom: 30px;
     margin-bottom: -30px;
     background: #ff5500;
+    padding-top: 30px;
   }
   .image-pq{
     background:white;
@@ -1137,5 +1143,38 @@ color: #ff5500;
     top: 4vh;
     right: 8%;
     font-size: 40px;
+  }
+  .text4{
+    font-size: 1.2rem;
+    text-align: center;
+    /* padding: 10px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    padding: 10px 10%;
+
+  }
+  .titulo1{
+    font-size: 2.7rem;
+    text-align: center;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10%;
+  }
+  .titulo{
+    font-size: 2.7rem;
+    text-align: center !important;
+    padding: 10px 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .pregunta{
+    font-size: 1.1rem;
+  }
+  .respuesta p{
+    font-size: 1.1rem;
+  }
+  .we-icons-section-1{
+    margin-bottom: 5vh;
   }
 }
