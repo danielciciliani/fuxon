@@ -218,6 +218,9 @@ nav ul li{
     cursor: pointer;
 }
 
+.iconoMenu{
+  display: none;
+}
 .ul_condensed{
   position: fixed;
   width: 100%;
@@ -379,6 +382,7 @@ input , select {
 
 textarea{
   font-family: 'Open Sans', sans-serif !important;
+  outline: none!important;
 }
 .ngr{
     color:#172b52;
@@ -1032,17 +1036,87 @@ color: #ff5500;
 .marginredes{
   margin-top: -60px;
 }
+
+.mensajeToast {
+  position: fixed;
+  z-index: 3000;
+  top: 300px;
+  left: 30%;
+  background: white;
+  padding:1%; 
+  width: 40%;
+  text-align: center;
+  border-radius: 20px;
+  border: solid 1px #173349;
+  display: none;
+  }
+  .ppmensajeToast{
+  font-size: 1.6em;
+  margin-left: 2.5%;
+  display: block;
+  color: #172b52;
+  text-align: center;
+  font-weight: normal;
+  }
+.toast{
+  animation: toast 2s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes toast {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes toast {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.toastReverse{
+  animation: toastReverse 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes toastReverse {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes toastReverse {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.ventanaPresupuesto{
+  display: none;
+  position: absolute;
+  top: 0px;
+  z-index: 5000;
+  background: white;
+}
+
+
 @media all and (max-width: 1024px){ 
   .mainlogo{
     width: 90%;
     margin: 40vh 5%;
   }
   nav ul li{
-    padding: 10px 2%;
+    padding: 0px 2%;
+    display: block;
+    text-align: right;
+    font-size: 0.8em;
   }
   nav ul{
     display: block;
-    padding: 10px 2%;
+    padding: 60px 5%;
+    position: absolute;
+  }
+  .ul_condensed{
+    padding: 10px 3%;
+    background: transparent;
+    font-size: 1.5em;
+    padding: 60px 5%;
+    position: absolute;
   }
   .marginredes{
     margin-top: -10px;
@@ -1176,5 +1250,17 @@ color: #ff5500;
   }
   .we-icons-section-1{
     margin-bottom: 5vh;
+  }
+  .iconoMenu{
+    color: white;
+    font-size: 2em;
+    display: inline-block;
+    position: absolute;
+    top: 2vh;
+    left: 85%;
+    z-index: 3000
+  }
+  #divMenu{
+    display: none;
   }
 }

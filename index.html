@@ -5,17 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta data-rh="true" property="fb:app_id" content="FUXON"/>
+    <meta data-rh="true" property="fb:og:title" content="FUXON" />
+    <link rel="canonical" href="http://www.fuxon.com.ar/" />
+    <meta data-rh="true" property="og:url" content="http://www.fuxon.com.ar/" />
+    <meta data-rh="true" property="og:image" content="http://www.fuxon.com.ar/images/fuxonpreview1.png"/>
+    <meta data-rh="true" property="og:title" content="FUXON" />
+    <meta data-rh="true" property="og:description" content="Construcción en Steel Framing" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
-    <link rel="stylesheet" href="./css/style.css?v=0.0.1">
+    <link rel="stylesheet" href="./css/style.css?v=0.0.5">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+    <link rel="shortcut icon" href="./images/favicon1.ico">
+
 
 </head>
 <body>
-    <nav class="navbar" onmouseleave="LeaveUnderline()">
+<div id="panelCentral">    
+    <div class="iconoMenu"><i class="fas fa-bars" onclick="AbrirMenuRes()"></i></div>
+    <nav class="navbar" id="divMenu" onmouseleave="LeaveUnderline()">
         <ul id="barra_menu">
             <li onclick="Menu(0)" id="menu0" onmouseover="Underline(event)"><a id="link0" class="itemNav">NOSOTROS</a></li>
             <li onclick="Menu(1)" id="menu1" onmouseover="Underline(event)"><a id="link1" class="itemNav">STEEL FRAMING</a></li>
@@ -56,9 +70,9 @@
             <div class="image-sf">
                 <h2 class="titulo1">¿QUÉ ES EL STEEL FRAMING?</h2>
                 <br>                
-                <p class="text4" style="text-align: justify;">Es un método constructivo basado en perfiles livianos de acero galvanizado de uniones atornilladas respondiendo a un cálculo de ingeniería. Estos perfiles son utilizados para la conformación de paneles estructurales, los cuales se montan sobre una platea de hormigón armado y se anclan definitivamente.</p>
-                <p class="text4" style="text-align: justify;">Exteriormente se reviste por multicapas entre ellas: placas de rigidización estructural, barrera de viento y agua, junto con las terminaciones requeridas según el proyecto, EIFS, Ceminticio, piedra, Etc.</p>
-                <p class="text4" style="text-align: justify;">En su interior se aloja una piel de placa de roca de yeso con el aislamiento térmico y acústico necesario para el confort habitacional de la vivienda.</p>
+                <p class="text4" style="text-align: center;">Es un método constructivo basado en perfiles livianos de acero galvanizado de uniones atornilladas respondiendo a un cálculo de ingeniería. Estos perfiles son utilizados para la conformación de paneles estructurales, los cuales se montan sobre una platea de hormigón armado y se anclan definitivamente.</p>
+                <p class="text4" style="text-align: center;">Exteriormente se reviste por multicapas entre ellas: placas de rigidización estructural, barrera de viento y agua, junto con las terminaciones requeridas según el proyecto, EIFS, Ceminticio, piedra, Etc.</p>
+                <p class="text4" style="text-align: center;">En su interior se aloja una piel de placa de roca de yeso con el aislamiento térmico y acústico necesario para el confort habitacional de la vivienda.</p>
                 <h2 class="titulo1">VENTAJAS DEL STEEL FRAMING</h2>
                 <div class="we-icons-section ventajas">
                     <div class="icon">
@@ -259,6 +273,7 @@
                 <p class="text5 ngr">Contamos con equipos de trabajo altamente calificados para desarrollar cada uno de nuestros proyectos.</p>                
                 <p class="text5 ngr">Porque día a día buscamos estratégicamente eficientizar los tiempos de obra cumpliendo con todos los requisitos y responsabilidades de ingeniería que requiere una obra.</p>
                 <p class="text5 ngr">Con seriedad, compromiso y profesionalismo nos encontramos sumamente dispuestos a ser parte de tu proyecto.</p>
+                <br><br>
                 <div class="orange">
                 <p class="text5 p3botones" id="tipeado" style="font-weight: 600; min-height: 220px">Para solicitar un presupuesto o recibir mayor información podes coordinar una reunión con nosotros de manera gratuita</p>    
                 <div class="presupuesto">
@@ -284,8 +299,8 @@
         <div class="data1" id="bloque5">
             <h2 class="titulo2" id="contacto">CONTACTO</h2>
             <p class="text55 izq1">Teléfono:</p>
-            <p class="text44 izq1">+54 9 261 2550614</p> 
-            <p class="text44 izq1">+54 9 261 6669434</p>
+            <p class="text44 izq1" style="text-decoration: none;" >+54 9 261 2550614</p> 
+            <p class="text44 izq1" style="text-decoration: none;" >+54 9 261 6669434</p>
             <br>
             <p class="text55 izq1">Dirección:</p>
             <p class="text44 izq1">Calle Independencia 277,</p> 
@@ -297,22 +312,22 @@
             <br>
         </div>
         <div class="data2" style="">
-            <input type="text" class="Entrada text77"  id="entrada1" placeholder=" Nombre:">
+            <input type="text" class="Entrada text77"  id="nombre_contacto" placeholder=" Nombre:">
             <br>
             <br>
-            <input type="text" class="Entrada text77"  id="entrada4" placeholder=" Celular:" onkeypress="Teclado()">
+            <input type="text" class="Entrada text77"  id="telefono_contacto" placeholder=" Celular:" onkeypress="Teclado()">
             <br>
             <br>
-            <input type="mail" class="Entrada text77"  id="entrada3" placeholder=" E-mail:">
+            <input type="mail" class="Entrada text77"  id="mail_contacto" placeholder=" E-mail:">
             <br>
             <br>
-            <textarea class="Entrada text77"  placeholder=" Mensaje:" id="entrada5" style="height: 180px; resize: none;"></textarea>
+            <textarea class="Entrada text77"  placeholder=" Mensaje:" id="mensaje" style="height: 180px; resize: none;"></textarea>
             <br>
             <br>
             <!-- <input type="botton" class="Enviar" value="Enviar" onclick="Enviar()"> -->
             <div style="text-align: right;">
-                <div class="bot-env">
-                    <p class="bot-env-p">Enviar</p>
+                <div class="bot-env" onclick="enviarContacto()">
+                    <p class="bot-env-p" >Enviar</p>
                 </div>
             </div>            
         </div> 
@@ -337,15 +352,16 @@
                 <p class="label77 labelpopup" style="text-align: center; width: 100%; margin: -30px 0px 20px 0px">Completá el formulario y recibí el presupuesto online</p>
                 <div class="section-work sol-pres">
                     <div class="section-brand-pop connosotros" style="height: auto; ">
+                    <form name='formulario' id='formulario' class="formulario" method='post' action='php/obtenerPresupuesto.php' target='_self' enctype="multipart/form-data"> 
                         <p class="label77">Nombre y Apellido *</p>
-                        <input type="text" class="Entrada text77"  id="nombre_presupuesto" style="width: 45%">
+                        <input type="text" class="Entrada text77"  id="nombre_presupuesto" name="NombrePresupuesto" style="width: 45%">
                         <p class="label77">E-mail *</p>
-                        <input type="mail" class="Entrada text77"  id="mail_presupuesto" style="width: 45%">
+                        <input type="mail" class="Entrada text77"  id="mail_presupuesto" name="MailPresupuesto" style="width: 45%">
                         <p class="label77">Teléfono *</p>
-                        <input type="text" class="Entrada text77"  id="telefono_presupuesto" onkeypress="Teclado()" style="width: 45%">
+                        <input type="text" class="Entrada text77"  id="telefono_presupuesto" name="TelefonoPresupuesto" onkeypress="Teclado()" style="width: 45%">
                         <br>
                         <p class="label77">Relación con la Obra *</p>
-                        <select class="Entrada text77" id="relacion_obra" style="width: 45%">
+                        <select class="Entrada text77" id="relacion_obra" style="width: 45%" name="Relacion">
                             <option></option>
                             <option>Propietario/Inversionista</option>
                             <option>Arquitecto/Proyectista</option>
@@ -354,7 +370,7 @@
                             <option>Otro</option>
                         </select>
                         <p class="label77">Tipo de Contrucción *</p>
-                        <select class="Entrada text77" id="tipo_obra" style="width: 45%">
+                        <select class="Entrada text77" id="tipo_obra" style="width: 45%" name="Tipo">
                             <option></option>
                             <option>Casa Unifamiliar</option>
                             <option>Complejo Multifamiliar</option>
@@ -364,32 +380,33 @@
                             <option>Otro</option>
                         </select>
                         <p class="label77">Provincia *</p>
-                        <select class="Entrada text77" id="provincia" style="width: 45%" onchange="Provincia()">
+                        <select class="Entrada text77" id="provincia" style="width: 45%" onchange="Provincia()" name="ProvinciaPresupuesto">
                             <option></option>
                         </select>
                         <p class="label77">Localidad *</p>
-                        <input type="text" class="Entrada text77" id="localidad" style="width: 45%" onkeyup="Localidad()" onclick="Provincia('1-1-5entrada')" autocomplete="nope">
+                        <input type="text" class="Entrada text77" id="localidad" style="width: 45%" onkeyup="Localidad()" onclick="Provincia('1-1-5entrada')" autocomplete="nope" name="LocalidadPresupuesto">
                         <div id="divLocalidad" style="display: none; position: absolute; z-index: 2; width: 29%;margin-left: 32%">
                             <div id="divLocalidad1"></div>
                         </div>
                         <p class="label77">Dirección de la Obra</p>
-                        <input type="text" class="Entrada text77"  id="direccion_presupuesto"  style="width: 45%">
+                        <input type="text" class="Entrada text77"  id="direccion_presupuesto"  style="width: 45%" name="Direccion">
                         <p class="label77" style="width: 45%">m2 a construir *</p>
-                        <input type="text" class="Entrada text77"  id="m2_presupuesto" onkeypress="Teclado()" style="width: 10%; margin-right: 35%">
+                        <input type="text" class="Entrada text77"  id="m2_presupuesto" onkeypress="Teclado()" name="m2" style="width: 10%; margin-right: 35%">
                         <div style="text-align: left;margin-left: 5%">
                             <p class="label77" style="width: 30%">Adjuntar Plano  -opcional-</p>
-                            <input  type="file" id="fichero" name="Archivo" onchange="Upload()" style="width: 25%; vertical-align: middle; opacity: 0; position: relative;z-index: 10; height: 20px; cursor: pointer;" />
+                            <input  type="file" id="fichero" name="Archivo" style="width: 25%; vertical-align: top; opacity: 0; position: relative;z-index: 10; height: 50px; cursor: pointer;" />
                             <i class="fas fa-file-upload IconoUpload plano" ></i>
                         </div>
                         
                         <div style="text-align: right;">
-                            <div class="bot-env">
+                            <div class="bot-env" onclick="ObtenerPresupuesto()">
                                 <p class="bot-env-p">Obtener Presupuesto</p>
                             </div>
                         </div>
                         <div class="text-obli" style="text-align: left;">
                             <p>(*)Datos obligatorios</p>
-                        </div>    
+                        </div> 
+                        </form>   
                     </div>
                 </div>
             </div>
@@ -405,17 +422,19 @@
                 <div class="section-work">
                     <div class="section-brand-pop connosotros" style="height: auto; ">
                         <p class="label77">Nombre y Apellido</p>
-                        <input type="text" class="Entrada text77"  id="nombre_reunión" style="width: 45%">
+                        <input type="text" class="Entrada text77"  id="nombre_reunion" style="width: 45%">
                         <p class="label77">E-mail</p>
                         <input type="mail" class="Entrada text77"  id="mail_reunion" style="width: 45%">
                         <p class="label77">Teléfono</p>
                         <input type="text" class="Entrada text77"  id="telefono_reunion" onkeypress="Teclado()" style="width: 45%">
                         <br>
-                        <div id="zonaReunines">
-                            <div id="zonareuniones1"></div>
+                        <div id="fechas_reunion_div">
+                            <p class="label77">Fecha Reunión</p>
+                             <select class="Entrada text77" id="fechas_reunion" style="width: 45%"></select>
                         </div>
+                       
                         <div style="text-align: right; margin-top: 20vh">
-                            <div class="bot-env">
+                            <div class="bot-env" onclick="enviarInscripcion()">
                                 <p class="bot-env-p">Inscribirme</p>
                             </div>
                         </div>    
@@ -424,12 +443,98 @@
             </div>
         </div>
     </div>
+
+    <div class="mensajeToast" id="toastMensaje">
+        <p class="ppmensajeToast" id="mensajetoastMensaje"></p>
+    </div>
+
+</div>
+
+
+    <div id="VentanaPresupuesto" class="ventanaPresupuesto">
+        <div class="presupuestofinal">
+        <!-- <div class="cabecera">
+                <h2 class="titulo7">PRESUPUESTO</h2>
+                <a class="logo-pres" href="index1.html"><img src="./logo1.png" alt=""></a>
+        </div> -->
+        <div class="cabecera-pres" style="background: #173349;" id="encabezado">
+                <h2 class="titulo7">PRESUPUESTO</h2>
+                <div class="item-logo1" style="width: 47%;">
+                    <div class="mainlogo1" style="margin-top: 3vh; width: 220px; display: inline-block;"></div>
+                </div>
+        </div>
+        <div class="fondo-presupuesto">
+        <div class="item-presupuesto">
+            <br>
+            <p class="text77" style="width: 70%; margin-left: auto; margin-right: auto; text-align: center;">Presupuesto estándar de materiales y mano de obra por metro cuadrado cubierto, para construcción
+                Obra gruesa de Vivienda nueva en Método Steel Framing ubicada en Gran Mendoza.</p>
+            <br>
+            <h2 class="text99">ESTRUCTURA Y REVESTIMIENTO DE EXTERIORES E INTERIORES</h2>
+
+            <p class="text88" style="margin-left: 15px;">Materiales y mano de obra: </p>
+            <ul class="materiales" style="padding-left: 80px;">
+                <li class="text77">Ejecución de lista de corte optimizada.</li>
+                <li class="text77">Armado de paneles y elementos estructurales según planos.</li>
+                <li class="text77">Montaje de estructura de paneles exteriores, interiores y cubiertas de techos.</li>
+                <li class="text77">Colocación de anclajes principales y secundarios en platea según planos.</li>
+                <li class="text77">Colocación de cruces, rigidizadores, conectores, bloking, straping y fijaciones.</li>
+                <li class="text77">Atornillado de OSB y colocación de barrera de agua y viento en muros.</li>
+                <li class="text77">Aplicación de EIFS en todos los muros exteriores. </li>
+                <li class="text77">Terminación con placa cementicias en mochetas, antepechos, dinteles y parapetos.</li>
+                <li class="text77">Colocación de aislación y barrera de vapor en muros y cielorrasos. </li>
+                <li class="text77">Colocación de emplacado de yeso en muros interiores con cantoneras. </li>
+                <li class="text77">Colocación de estructura y emplacado en cielorrasos con corte de pintura según
+                    proyecto.</li>
+            </ul>
+            <br>
+            <div class="final text88"style="border-style: solid;border-color: #ff5500;background-color: #ff5500;color: white;border-radius: 20px" >
+                <p class="text88" style="text-align: end;" id="costoPresupuesto"></p>
+            </div>
+            <br>
+            <p style="color: #ff5500">*Basado en una vivienda unifamiliar de entre 100 y 300 m2 cubiertos, no considerando aleros, semi
+                cubiertos o decoraciones exteriores especiales.</p>
+            <p>Cotización dólar contemplada en el presente presupuesto según BNA: tipo vendedor. Los precios de los
+                materiales cambian constantemente sin previo aviso.</p>
+                <p class="no-incluye">No incluye: Proyecto de Arquitectura, Renders, Proyecto Instalación Sanitaria e Instalación Eléctrica.
+                    Proyecto y cálculo de Ingeniería en Steel Framing. Planos de taller y montaje. Estudio de suelos, costos
+                    por gestiones ante organismos, aforos, boletas de concejo profesional, permisos. Platea de fundación,
+                    Nivelación y compactación, fundaciones especiales; veredines perimetrales, contra pisos exteriores,
+                    veredas y puentes de acceso vehicular; cierre permetral de obra; Materiales de cubierta de techo,
+                    Zinguería, revestimientos plásticos exteriores, revestimientos decorativos de piedra u otros, aberturas,
+                    puertas y ventanas exteriores, fletes de materiales a obra y equipos especiales, pérgolas o estructuras
+                    anexas, rejas de ventanas y portones, cambios no establecidos en los planos y otros no descriptos en el
+                    presente. Emplacados dobles, muros cortafuegos, aislantes sonoros especiales, cajones decorativos,
+                    cenefas, gargantas u otro tipo de trabajos interiores, puertas y aberturas interiores, revestimientos
+                    cerámicos en muros y pisos, pintura interior, placares, muebles de cocina, fletes de materiales a obra,
+                    alquiler de equipos especiales, cambios no establecidos en los planos y otros no descriptos en el
+                    presente. fletes de materiales a obra, acarreos de escombros, llenado de contenedores, y otros no
+                    descriptos en el presente presupuesto. Instalación Eléctrica, Instalación Sanitaria, Griferías,
+                    artefactos de baño, instalaciones especiales, Otras instalaciones no incluidas: Instalaciones de
+                    refrigeración y calefacción, instalación de tanques/cisternas/bombas/biodigestores/pozos sépticos;
+                    instalaciones para gas; instalación de colectores y energía solar; conexiones a servicios públicos.
+                    Instalaciones de alarma, portero eléctrico, cercos perimetrales y cámaras de seguridad. Colocación de
+                    artefactos eléctricos, y otras instalaciones no especificadas en el presente.</p>
+            </div>
+            </div>
+    </div>
+    </div>
 </body>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 <!-- script carrousel -->
 <script>
+
+var menu=0;
+function AbrirMenuRes(){
+    if (menu==0){
+        document.getElementById('divMenu').style.display='block';
+        menu=1;
+    }else{
+        document.getElementById('divMenu').style.display='none';
+        menu=0;
+    }
+}
 
 traerCorousel();
 function traerCorousel(){
@@ -742,6 +847,201 @@ function tipear(){
             document.getElementById('boton2').classList.remove("entrada_derecha");
         },200)
 }
+
+function enviarContacto(){
+    if(document.getElementById('nombre_contacto').value=="" || document.getElementById('telefono_contacto').value=="" || document.getElementById('mail_contacto').value==""){
+        Toast("Complete los campos faltantes");
+        return;
+    }
+    if(document.getElementById('telefono_contacto').value.length<9){
+        Toast("Ingrese un número celular válido");
+        return;
+    }
+    var valido=false;
+    var valido1=false
+
+    for(x=0;x<document.getElementById('mail_contacto').value.length-1;x++){
+        if(document.getElementById('mail_contacto').value.substring(x,(x+1))=='@'){
+            valido=true;
+        }
+        if(document.getElementById('mail_contacto').value.substring(x,(x+1))=='.'){
+            valido1=true;
+        }
+    }
+    if(valido && valido1){}else{
+        Toast("Ingrese una dirección de correo válida")
+        return;
+    }
+
+    var xmlhttp1 = new XMLHttpRequest();
+    xmlhttp1.onreadystatechange = function() {
+    if (xmlhttp1.readyState==4 && xmlhttp1.status==200) {
+        respuesta1 = xmlhttp1.responseText;
+        console.log(respuesta1);
+        Toast(respuesta1);
+        if(respuesta1=="Mensaje enviado correctamente"){
+            document.getElementById('nombre_contacto').value = "";
+            document.getElementById('mail_contacto').value = "";
+            document.getElementById('telefono_contacto').value = "";
+            document.getElementById('mensaje').value = "";
+        } 
+    }
+    }
+    var NombreContacto = document.getElementById('nombre_contacto').value;
+    var MailContacto = document.getElementById('mail_contacto').value;
+    var TelefonoContacto = document.getElementById('telefono_contacto').value;
+    var Mensaje = document.getElementById('mensaje').value;
+
+    var cadenaParametros = 'NombreContacto='+encodeURIComponent(NombreContacto)+'&MailContacto='+encodeURIComponent(MailContacto)+'&TelefonoContacto='+encodeURIComponent(TelefonoContacto)+'&Mensaje='+encodeURIComponent(Mensaje);
+    xmlhttp1.open('POST', 'php/enviarContacto.php');
+    xmlhttp1.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
+    xmlhttp1.send(cadenaParametros); 
+}   
+
+function ObtenerPresupuesto(){
+    if(document.getElementById('nombre_presupuesto').value=="" || document.getElementById('telefono_presupuesto').value=="" || document.getElementById('mail_presupuesto').value=="" || document.getElementById('relacion_obra').value=="" || document.getElementById('tipo_obra').value=="" || document.getElementById('provincia').value=="" || document.getElementById('localidad').value=="" || document.getElementById('m2_presupuesto').value==""){
+        Toast("Complete los campos faltantes");
+        return;
+    }
+    if(document.getElementById('telefono_presupuesto').value.length<9){
+        Toast("Ingrese un número celular válido");
+        return;
+    }
+    var valido=false;
+    var valido1=false
+
+    for(x=0;x<document.getElementById('mail_presupuesto').value.length-1;x++){
+        if(document.getElementById('mail_presupuesto').value.substring(x,(x+1))=='@'){
+            valido=true;
+        }
+        if(document.getElementById('mail_presupuesto').value.substring(x,(x+1))=='.'){
+            valido1=true;
+        }
+    }
+    if(valido && valido1){}else{
+        Toast("Ingrese una dirección de correo válida")
+        return;
+    }
+
+    fd = new FormData(document.getElementById('formulario'));
+    Ajax = new XMLHttpRequest();
+    Ajax.open("POST", document.getElementById('formulario').action, true);
+    Ajax.onreadystatechange = function() {
+        if  (Ajax.readyState == 4 && Ajax.status == 200) {
+        respuesta1 = Ajax.responseText;
+        console.log(respuesta1);
+        if(respuesta1.substring(0,5)!="Error"){
+            window.scrollTo(0,0);
+            var costo_presupuesto = new Intl.NumberFormat("de-DE").format(respuesta1);
+            var costo_texto = "Costo Total de Materiales y Mano de Obra Gruesa en Steel Framing para "+document.getElementById('m2_presupuesto').value+" de contrucción: $ "+costo_presupuesto+" (+IVA)";
+            document.getElementById('costoPresupuesto').innerHTML=costo_texto;
+            document.getElementById('panelCentral').style.display="none";
+            document.getElementById('VentanaPresupuesto').style.display="block";
+            document.getElementById('nombre_presupuesto').value = "";
+            document.getElementById('mail_presupuesto').value = "";
+            document.getElementById('telefono_presupuesto').value = "";
+            document.getElementById('relacion_obra').value = "";
+            document.getElementById('tipo_obra').value = "";
+            document.getElementById('provincia').value = "";
+            document.getElementById('localidad').value = "";
+            document.getElementById('direccion_presupuesto').value = "";
+            document.getElementById('m2_presupuesto').value = "";
+            document.getElementById('fichero').value = "";
+        } else{
+            Toast(respuesta1);
+        }
+    }
+    }
+    Ajax.send(fd);
+}
+
+function enviarInscripcion(){
+    if(document.getElementById('nombre_reunion').value=="" || document.getElementById('telefono_reunion').value=="" || document.getElementById('mail_reunion').value==""){
+        Toast("Complete los campos faltantes");
+        return;
+    }
+    if(document.getElementById('telefono_reunion').value.length<9){
+        Toast("Ingrese un número celular válido");
+        return;
+    }
+    var valido=false;
+    var valido1=false
+
+    for(x=0;x<document.getElementById('mail_reunion').value.length-1;x++){
+        if(document.getElementById('mail_reunion').value.substring(x,(x+1))=='@'){
+            valido=true;
+        }
+        if(document.getElementById('mail_reunion').value.substring(x,(x+1))=='.'){
+            valido1=true;
+        }
+    }
+    if(valido && valido1){}else{
+        Toast("Ingrese una dirección de correo válida")
+        return;
+    }
+
+    var xmlhttp1 = new XMLHttpRequest();
+    xmlhttp1.onreadystatechange = function() {
+    if (xmlhttp1.readyState==4 && xmlhttp1.status==200) {
+        respuesta1 = xmlhttp1.responseText;
+        console.log(respuesta1);
+        Toast(respuesta1);
+        if(respuesta1=="Gracias por inscribirse a la siguiente reunión"){
+            document.getElementById('nombre_reunion').value = "";
+            document.getElementById('mail_reunion').value = "";
+            document.getElementById('telefono_reunion').value = "";
+        } 
+    }
+    }
+    var NombreReunion = document.getElementById('nombre_reunion').value;
+    var MailReunion = document.getElementById('mail_reunion').value;
+    var TelefonoReunion = document.getElementById('telefono_reunion').value;
+    var FechaReunion = document.getElementById('fechas_reunion').value;
+
+    var cadenaParametros = 'NombreContacto='+encodeURIComponent(NombreReunion)+'&MailContacto='+encodeURIComponent(MailReunion)+'&TelefonoContacto='+encodeURIComponent(TelefonoReunion)+'&FechaReunion='+encodeURIComponent(FechaReunion);
+    xmlhttp1.open('POST', 'php/enviarInscripcion.php');
+    xmlhttp1.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
+    xmlhttp1.send(cadenaParametros); 
+}   
+function Toast(textoToast){
+    document.getElementById('toastMensaje').style.display = 'block';
+    document.getElementById('toastMensaje').classList.remove('toast');
+    document.getElementById('toastMensaje').classList.add('toastReverse');
+    setTimeout(function(){
+        document.getElementById('toastMensaje').classList.add('toast');
+        document.getElementById('toastMensaje').classList.remove('toastReverse');
+    },3000); 
+    setTimeout(function(){
+        document.getElementById('toastMensaje').style.display = 'none';
+    },4500); 
+    document.getElementById('mensajetoastMensaje').innerHTML = textoToast;
+} 
+
+//busca las próximas reuniones 
+var xmlhttp3 = new XMLHttpRequest();
+xmlhttp3.onreadystatechange = function() {
+if (xmlhttp3.readyState==4 && xmlhttp3.status==200) {
+    respuesta3 = xmlhttp3.responseText;
+    console.log(respuesta3)
+    FechasReunion =JSON.parse(respuesta3);
+    for(x=0;x<FechasReunion.length/2;x++){
+        var fecha_format = FechasReunion[x*2].split('T')[0];
+        var time_format = FechasReunion[x*2].split('T')[1];
+        var fecha_format_new = fecha_format.split('-')[2]+"/"+fecha_format.split('-')[1]+"/"+fecha_format.split('-')[0]+" "+time_format + "hs";
+        var op= document.createElement('OPTION');
+        op.value = fecha_format_new;
+        op.text = fecha_format_new;
+        document.getElementById('fechas_reunion').appendChild(op);
+    }
+    if(FechasReunion.length==0){
+        document.getElementById('fechas_reunion_div').style.display="none";
+    }
+}
+}
+var cadenaParametros = 'Origen=0';
+xmlhttp3.open('POST', 'php/buscarFechas.php');
+xmlhttp3.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
+xmlhttp3.send(cadenaParametros); 
 
 </script>
 </html>

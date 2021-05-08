@@ -6,7 +6,7 @@ session_start();
 	<link rel="stylesheet" href="./css/style.css">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico?v=4">
+	<link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon1.ico?v=4">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
  	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>

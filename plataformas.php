@@ -10,9 +10,8 @@ if( !isset($_SESSION["IDSesion"]) ){
 	<link rel="stylesheet" href="./css/style.css?v=0.1">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?v=4">
  	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?v=2">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon1.ico?v=2">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
@@ -26,7 +25,7 @@ if( !isset($_SESSION["IDSesion"]) ){
 	</span>
 </div>
 	<p class="ppInput">Precio por m2</p>
-	<form method="post" action="presupuesto.php">
+	<form method="post" action="presupuesto.php" style="margin-left: 5%">
 		<input type="number" name="costom2" class="inputPlataforma" id="costo" >
 		<div class="bot-env" onclick="CambiarCosto()" style="width: 180px; padding: 10px 0px; text-align:center;">
 			<p class="bot-env-p">Guardar Precio</p>
