@@ -50,7 +50,7 @@ if( !isset($_SESSION["IDSesion"]) ){
 	<p class="ppInput">Imágenes</p>
 	<form name='formulario' id='formulario' class="formulario" method='post' action='php/upload.php' target='_self' enctype="multipart/form-data"> 
 	<input  type="file" id="fichero" name="Archivo" onchange="Upload()" style="width: 15%; vertical-align: middle; opacity: 0; position: relative;z-index: 10; height: 30px; cursor: pointer;" />
-    <i class="fas fa-cloud-upload-alt IconoUpload" ></i>
+    <i class="fas fa-cloud-upload-alt IconoUpload" style="margin-left: -50px; margin-right: 50px" ></i>
     <div class="bot-env" onclick="GuardarImagenes()" style="width: 250px; padding: 10px 0px; text-align:center;">
         <p class="bot-env-p">Guardar Texto Imágenes</p>
     </div>

@@ -730,11 +730,12 @@ var contar = 0;
 var contarop = 0;
 
 //busca las provincias 
-var xmlhttp3 = new XMLHttpRequest();
-xmlhttp3.onreadystatechange = function() {
-if (xmlhttp3.readyState==4 && xmlhttp3.status==200) {
-    respuesta3 = xmlhttp3.responseText;
-    Provincias =JSON.parse(respuesta3);
+var xmlhttp4 = new XMLHttpRequest();
+xmlhttp4.onreadystatechange = function() {
+if (xmlhttp4.readyState==4 && xmlhttp4.status==200) {
+    respuesta4 = xmlhttp4.responseText;
+    console.log(respuesta4)
+    Provincias =JSON.parse(respuesta4);
     for(x=0;x<Provincias.length/2;x++){
         var op= document.createElement('OPTION');
         op.value = Provincias[x*2+1];
@@ -744,9 +745,9 @@ if (xmlhttp3.readyState==4 && xmlhttp3.status==200) {
 }
 }
 var cadenaParametros = '';
-xmlhttp3.open('POST', 'php/buscarprovincias.php');
-xmlhttp3.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
-xmlhttp3.send(cadenaParametros); 
+xmlhttp4.open('POST', 'php/buscarprovincias.php');
+xmlhttp4.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
+xmlhttp4.send(cadenaParametros); 
 
 function Provincia(){
     document.getElementById("localidad").value = '';
@@ -933,7 +934,7 @@ function ObtenerPresupuesto(){
         if(respuesta1.substring(0,5)!="Error"){
             window.scrollTo(0,0);
             var costo_presupuesto = new Intl.NumberFormat("de-DE").format(respuesta1);
-            var costo_texto = "Costo Total de Materiales y Mano de Obra Gruesa en Steel Framing para "+document.getElementById('m2_presupuesto').value+" de contrucción: $ "+costo_presupuesto+" (+IVA)";
+            var costo_texto = "Costo Total de Materiales y Mano de Obra Gruesa en Steel Framing: $"+costo_presupuesto+" (+IVA) el m2";
             document.getElementById('costoPresupuesto').innerHTML=costo_texto;
             document.getElementById('panelCentral').style.display="none";
             document.getElementById('VentanaPresupuesto').style.display="block";

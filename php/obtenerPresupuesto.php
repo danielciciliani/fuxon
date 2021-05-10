@@ -12,7 +12,7 @@ require 'SMTP.php';
     $conexionPDO= new PDO("mysql:host=$servidor;dbname=$bd;charset=UTF8",$usuario,$clave);
    
     //Verifica el archivo subido
-        
+$directorio="";
     if($_FILES['Archivo']['size']!=0){
         $nombre = $_FILES['Archivo']['name'];
         $tamaño =$_FILES['Archivo']['size'];
@@ -67,9 +67,8 @@ $m2 = floatval($_POST['m2']);
        $nombre_provincia= $filaPDO['NombreProvincia'];
     }
 
-
-$preciototal = $precio * $m2;  
-echo $preciototal;
+ 
+echo $precio;
 
 
 $conexionPDO = null;
@@ -113,7 +112,10 @@ $phpmailer->AddAddress($address_to); // recipients email
 $phpmailer->addCC($cc_to1);
 $phpmailer->addCC($cc_to2);
 
-$phpmailer->AddAttachment($directorio);
+if($directorio!=""){
+   $phpmailer->AddAttachment($directorio); 
+}
+
 
 $phpmailer->Subject = $the_subject; 
 $phpmailer->Body .="<h1 style='color:#ff5500'>".$the_title."</h1>";
@@ -126,7 +128,7 @@ $phpmailer->Body .= "<p>Provincia: ".utf8_decode(str_replace($bad,"",$nombre_pro
 $phpmailer->Body .= "<p>Localidad: ".utf8_decode(str_replace($bad,"",$Localidad))."</p>";
 $phpmailer->Body .= "<p>".utf8_decode("Dirección de la Obra: ").utf8_decode(str_replace($bad,"",$Direccion))."</p>";
 $phpmailer->Body .= "<p>m2 a Construir: ".utf8_decode(str_replace($bad,"",$m2))."</p>";
-$phpmailer->Body .= "<p>COSTO TOTAL: ".utf8_decode(str_replace($bad,"",$preciototal))."</p>";
+$phpmailer->Body .= "<p>COSTO m2: ".utf8_decode(str_replace($bad,"",$precio))."</p>";
 
 $phpmailer->IsHTML(true);
 
